@@ -45,8 +45,6 @@ class App extends Component {
         <Header />
         <h2>Party Leader</h2>
         {this.state.guestList[0] && <h3>{this.state.guestList[0].name}</h3>}
- feature-guest-list
-        <h2>Add a new guest</h2>
         <GuestForm newGuest={this.state.newGuest}
         handleChangeFor={this.handleChangeFor}
         handleSubmit={this.handleSubmit}

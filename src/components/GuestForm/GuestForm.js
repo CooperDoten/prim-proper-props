@@ -8,6 +8,7 @@ class GuestForm extends Component {
     render(){
         return (
             <div>
+             
                 <h2>Add a new guest</h2>
                 <form onSubmit={this.props.handleSubmit}>
                 <label>
@@ -16,7 +17,7 @@ class GuestForm extends Component {
                 <input
                     type="text"
                     placeholder="Name"
-                    value={this.state.newGuest.name}
+                    value={this.props.newGuest.name}
                     onChange={this.props.handleChangeFor('name')}
                 />
                 <div>
